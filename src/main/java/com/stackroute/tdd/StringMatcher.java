@@ -4,7 +4,7 @@
 package com.stackroute.tdd;
 import java.util.Scanner;
 import java.util.regex.*;
-public class Matching {
+public class StringMatcher {
     public static void main(String[] args) {
 
         System.out.println("Enter the string ");
@@ -14,7 +14,7 @@ public class Matching {
 
         String string = input.next();
         Pattern pattern = Pattern.compile(string);
-        Matcher matcher = pattern.matcher(paragraph);
+        Matcher matcher = pattern.matcher(paragraph);//check wheather given word is in that sentence or not
 
         while (matcher.find()) {
             System.out.println("Found at: " + matcher.start() //print the start and end index of string
